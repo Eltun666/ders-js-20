@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+body header .greenheader {
+  padding: 0 30px;
+  background-color: #82ae46;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body header .greenheader .phonetext {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body header .greenheader .phonetext i {
+  color: white;
+}
+body header .greenheader .phonetext span {
+  color: white;
+}
+body header .greenheader .emailtext {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body header .greenheader .emailtext i {
+  color: white;
+}
+body header .greenheader .emailtext span {
+  color: white;
+}
+body header .greenheader .text {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body header .greenheader .text span {
+  color: white;
+}
+body header .header {
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .header .logo span {
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #82ae46;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body header .header .logo span:hover {
+  color: black;
+}
+body header .header .navbar {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+body header .header .navbar #ul {
+  display: flex;
+}
+body header .header .navbar #ul li {
+  margin: 20px 0px;
+  position: relative;
+}
+body header .header .navbar #ul li a {
+  font-size: 11px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+body header .header .navbar #ul .shop .shophov {
+  position: absolute;
+  top: 0;
+  z-index: 22;
+  padding: 10px;
+  width: 180px;
+  height: 190px;
+  display: none;
+  align-items: end;
+}
+body header .header .navbar #ul .shop .shophov ul {
+  background-color: #f9f9f9;
+}
+body header .header .navbar #ul .shop .shophov ul li {
+  margin: 5px 0;
+}
+body header .header .navbar #ul .shop:hover .shophov {
+  display: flex;
+}
+body header .header .navbar p {
+  margin-right: 10px;
+  color: #000000;
+}
+body header .header .navbar p span {
+  font-size: 15px;
+  cursor: pointer;
+}
+body header .header .navbar #heart span {
+  color: red;
+  font-size: 18px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+body header .header .barlogo {
+  display: none;
+}
+body main .mycard {
+  width: 100%;
+  height: 350px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://preview.colorlib.com/theme/vegefoods/images/bg_1.jpg.webp);
+}
+body main .mycard span {
+  color: white;
+  line-height: 1.8;
+  font-family: "Poppins", Arial, sans-serif;
+  letter-spacing: 3px;
+}
+body main .mycard h3 {
+  font-weight: 800;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Poppins", Arial, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+body main .producsec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .producsec .boxs {
+  width: 80%;
+  margin: 30px 0 20px;
+}
+body main .producsec .boxs .infobox {
+  background-color: #82ae46;
+  display: flex;
+  justify-content: center;
+}
+body main .producsec .boxs .infobox .colo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+}
+body main .producsec .boxs .infobox .colo h3 {
+  color: white;
+}
+body main .producsec .boxs .infobox .close {
+  width: 90px;
+}
+body main .producsec .boxs .infobox .img {
+  width: 225px;
+}
+body main .producsec .boxs .infobox .producname {
+  width: 333px;
+}
+body main .producsec .boxs .infobox .price {
+  width: 120px;
+}
+body main .producsec .boxs .infobox .quantity {
+  width: 222px;
+}
+body main .producsec .boxs .infobox .total {
+  width: 120px;
+}
+body main .producsec .boxs .box .inbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.141);
+}
+body main .producsec .boxs .box .inbox .closebox {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .producsec .boxs .box .inbox .closebox i {
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #000000;
+}
+body main .producsec .boxs .box .inbox .closebox i:hover {
+  color: red;
+  transform: scale(1.4);
+}
+body main .producsec .boxs .box .inbox .imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 110px;
+  padding: 30px 0;
+}
+body main .producsec .boxs .box .inbox .imgbox img {
+  width: 100px;
+  height: 100px;
+}
+body main .producsec .boxs .box .inbox .producnamebox {
+  width: 333px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .producsec .boxs .box .inbox .producnamebox h5 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+body main .producsec .boxs .box .inbox .pricebox {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-weight: 500;
+}
+body main .producsec .boxs .box .inbox .quantitybox {
+  width: 222px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .producsec .boxs .box .inbox .quantitybox p {
+  border: 1px solid black;
+  width: 120px;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+}
+body footer {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+body footer .footer .boxs {
+  display: flex;
+  gap: 30px;
+  width: 72%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+body footer .footer .boxs .vegefoodbox {
+  width: 223px;
+  overflow: hidden;
+}
+body footer .footer .boxs .vegefoodbox .text h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .vegefoodbox .text p {
+  margin-bottom: 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .footer .boxs .vegefoodbox .logoboxs {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 30px 0 10px;
+}
+body footer .footer .boxs .vegefoodbox .logoboxs .logobox {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.02);
+}
+body footer .footer .boxs .vegefoodbox .logoboxs .logobox i {
+  font-size: 26px;
+}
+body footer .footer .boxs .menubox {
+  width: 176px;
+  margin: 0 30px;
+  padding: 0 0 24px 30px;
+}
+body footer .footer .boxs .menubox h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .menubox ul li {
+  padding: 8px 0;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .footer .boxs .menubox ul li a {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .helpbox {
+  margin-right: 30px;
+  padding-right: 30px;
+}
+body footer .footer .boxs .helpbox h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .helpbox .inbox {
+  display: flex;
+}
+body footer .footer .boxs .helpbox .inbox ul li {
+  padding: 8px 0;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .footer .boxs .helpbox .inbox ul li a {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .helpbox .inbox .faqbox {
+  margin-left: 20px;
+  padding-top: 8px;
+}
+body footer .footer .boxs .helpbox .inbox .faqbox p {
+  padding: 8px 0;
+}
+body footer .footer .boxs .havebox {
+  width: 210px;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+body footer .footer .boxs .havebox h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .havebox .text {
+  display: flex;
+  margin-bottom: 20px;
+}
+body footer .footer .boxs .havebox .text i {
+  margin-right: 20px;
+}
+body footer .End {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+body footer .End p {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .End p span {
+  color: #82ae46;
+  cursor: pointer;
+}

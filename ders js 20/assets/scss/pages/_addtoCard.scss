@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    header{
+        .greenheader{
+            padding: 0 30px;
+            background-color: #82ae46 ;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .phonetext{
+                padding: 5px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                i{
+                    color: white;
+                }
+                span{
+                    color: white;
+                }
+            }
+            .emailtext{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                i{
+                    color: white;
+                }
+                span{
+                    color: white;
+                }
+            }
+            .text{
+                display: flex;
+                gap: 10px;
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                span{
+                    color: white;
+                }
+            }
+        }
+        .header{
+            top: 0;
+            z-index: 100;
+            background-color: white;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo{
+                span{
+                    font-weight: 800;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    line-height: inherit;
+                    white-space: nowrap;
+                    color: #82ae46;
+                    cursor: pointer;
+                    transition: 0.4s;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+            .navbar{
+                display: flex;
+                align-items: center;
+                padding-right: 30px;
+                #ul{
+                    display: flex;
+                    li{
+                        margin: 20px 0px;
+                        position: relative;
+                        a{
+                            font-size: 11px;
+                            padding-top: 1.5rem;
+                            padding-bottom: 1.5rem;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-weight: 400;
+                            color: #000000;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        }
+                    }
+                    .shop{
+                        .shophov{
+                            position: absolute;
+                            top: 0;
+                            z-index: 22;
+                            padding: 10px;
+                            width: 180px;
+                            height: 190px;
+                            display: none;
+                            align-items: end;
+                            ul{
+                                background-color: #f9f9f9;
+                                li{
+                                    margin: 5px 0;
+                                }
+                            }
+                        }
+                        &:hover{
+                            .shophov{
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+                p{
+                    margin-right: 10px;
+                    color: #000000;
+                    span{
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+                #heart{
+                    span{
+                        color: red;
+                        font-size: 18px;
+                        transition: .4s;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+            .barlogo{
+                display: none;
+            }
+        }
+    }
+
+    main{
+        .mycard{
+            width: 100%;
+            height: 350px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://preview.colorlib.com/theme/vegefoods/images/bg_1.jpg.webp);
+            span{
+                color: white;
+                line-height: 1.8;
+                font-family: "Poppins", Arial, sans-serif;
+                letter-spacing: 3px;
+            }
+            h3{
+                font-weight: 800;
+                color: #fff;
+                font-size: 30px;
+                font-family: "Poppins", Arial, sans-serif;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+
+        .producsec{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .boxs{
+                width: 80%;
+                margin: 30px 0 20px;
+                .infobox{
+                    background-color: #82ae46;
+                    display: flex;
+                    justify-content: center;
+
+                    .colo{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 25px 0;
+                        h3{
+                            color: white;
+                        }                        
+                    }
+                    .close{
+                        width: 90px;
+                    }
+                    .img{
+                        width: 225px;
+                    }
+                    .producname{
+                        width: 333px;
+                    }
+                    .price{
+                        width: 120px;
+                    }
+                    .quantity{
+                        width: 222px;
+                    }
+                    .total{
+                        width: 120px;
+                    }
+                }
+                .box{
+                    .inbox{
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 15px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.141);
+                        .closebox{
+                            width: 90px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            i{
+                                font-size: 24px;
+                                cursor: pointer;
+                                transition: .5s;
+                                color: #000000;
+                                &:hover{
+                                    color: red;
+                                    transform: scale(1.4);
+                                }
+                            }
+                        }
+                        .imgbox{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 225px;
+                            height: 110px;
+                            padding: 30px 0;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                        .producnamebox{
+                            width: 333px;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            h5{
+                                color: #000000;
+                                font-weight: 600;
+                                font-size: 20px;
+                            }
+                        }
+                        .pricebox{
+                            width: 120px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #000000;
+                            font-weight: 500;
+                        }
+                        .quantitybox{
+                            width: 222px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            p{
+                                border: 1px solid black;
+                                width: 120px;
+                                text-align: center;
+                                color: #000000;
+                                font-weight: 500;
+                            }
+                        }
+                    }                    
+                }
+            }
+        }
+    } 
+
+    footer{
+        margin-top: 30px;
+        padding-top: 30px;
+        .footer{
+            .boxs{
+                display: flex;
+                gap: 30px;
+                width: 72%;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                .vegefoodbox{
+                    width: 223px;
+                    overflow: hidden;
+                    .text{
+                        h2{
+                            margin-bottom: 20px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            font-family: "Poppins", Arial, sans-serif;   
+                        }
+                        p{
+                            margin-bottom: 1rem;
+                            font-family: "Poppins", Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 1.8;
+                            font-weight: 400;
+                        }
+                    }
+                    .logoboxs{
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 18px;
+                        padding: 30px 0 10px;
+                        .logobox{
+                           
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgba(0, 0, 0, 0.02);
+                            i{
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+                .menubox{
+                    width: 176px;
+                    margin: 0 30px;
+                    padding: 0 0 24px 30px;
+                    h3{
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                        font-family: "Poppins", Arial, sans-serif;
+                    }
+                    ul{
+                        li{
+                            padding: 8px 0;
+                            line-height: 1.8;
+                            font-weight: 400;
+                            a{
+                                color: #000000;
+                                font-size: 14px;
+                                font-family: "Poppins", Arial, sans-serif;
+                            }
+                        }
+                    }
+                }
+                .helpbox{
+                    margin-right: 30px;
+                    padding-right: 30px;
+                    h2{
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                        font-family: "Poppins", Arial, sans-serif;
+                    }
+                    .inbox{
+                        display: flex;
+                        ul{
+                            li{
+                                padding: 8px 0;
+                                line-height: 1.8;
+                                font-weight: 400;
+                                a{
+                                    color: #000000;
+                                    font-size: 14px;
+                                    font-family: "Poppins", Arial, sans-serif;
+                                }
+                            }                        
+                        }
+                        .faqbox{
+                            margin-left: 20px;
+                            padding-top: 8px;
+                            p{
+                                padding: 8px 0;
+                            }
+                        }
+                        
+                    }
+                }
+                .havebox{
+                    width: 210px;
+                    margin-left: 30px;
+                    padding-left: 30px;
+                    h2{
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                        font-family: "Poppins", Arial, sans-serif;
+                    }
+                    .text{
+                        display: flex;
+                        margin-bottom: 20px;
+                        i{
+                            margin-right: 20px;
+                        }                        
+                    }
+                }
+            }
+        }
+        .End{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0;
+            margin: 30px 0;
+            p{
+                font-family: "Poppins", Arial, sans-serif;
+                font-size: 14px;
+                line-height: 1.8;
+                font-weight: 400;
+                span{
+                    color: #82ae46;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
